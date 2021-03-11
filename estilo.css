@@ -1,0 +1,548 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding: 0px;
+}
+
+
+/*clases tipografia*/
+
+.epigrafe{
+    padding-top: 5px;
+    text-align: center;
+    font-size: smaller;
+    font-family: 'Open Sans', sans-serif;  
+}
+
+.titulo {
+    text-align: center;
+    color: #343A40;
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.negrita {
+    font-weight: bold;
+}
+
+body {
+    width: 100%;
+    padding-top: 20%;
+    background-image: url(img/Photos/cemento_blanco.jpg);
+    background-size:contain ;
+}
+
+/* Header*/
+
+header{
+    width: 100%;
+    height: 5em;
+    position:fixed;
+    display:flex;
+    align-items: center;
+    background-color: white;
+    border-bottom: solid black 1px;
+    top: 0px;
+    left: 0px;
+}
+
+#logoAlteraEncabezado {
+    width: 100%;
+}
+
+#logo {
+    width: 15vh;
+    transform: skew(20deg,0deg);
+}
+
+header label {
+    display: block;
+    width: 8vh;
+    height: 8vh;
+    padding:10px;
+}
+
+.menuNav {
+    position: absolute;
+   right: 0;
+
+   background-color:black;
+    width: 30%;
+    margin-right: -31%;
+}
+
+.menuNav ul li:hover {
+   background-color: white;
+   transition-delay:0.1s ;
+}
+
+.menuNav ul li a:hover {
+    color: black;
+    transition-delay:0.1s ;
+    }
+.menuNav ul li {
+    width: 100%;
+    text-align:left;
+    padding:0;
+    border-right:0px;
+}
+
+header label {
+    position: absolute;
+    right: 0;
+}
+
+.menuNav ul {
+    display:flex;
+    flex-direction: column;
+}
+
+
+
+.menuNav ul li a {
+    font-size: 0.85em;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.menuNav ul li{
+    font-size: 1.10em;
+
+    letter-spacing: 1px;
+}
+
+ul li{
+    list-style: none;
+}
+
+
+
+#menuIcon {
+    width: 100%;
+}
+
+#botonMenu {
+    display: none;
+}
+
+header label {
+    display: block;
+    width: 60px;
+    height: 60px;
+    padding:10px;
+}
+
+header label:hover {
+    cursor: pointer;
+}
+
+
+#botonMenu:checked ~ .menuNav {
+    margin-top: 12em;
+    margin-right: 0;
+}
+
+
+/*Main - contenido principal-*/
+
+main {
+    padding-left: 0.5em;
+    padding-right:0.5em ;
+    margin-bottom: 5em ;
+}
+main p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.75em;
+    letter-spacing: 0.5px;
+}
+
+main h1, h2 {
+    padding-bottom: 3px;
+    padding-top: 5px;
+}
+
+main section div {
+    padding-top: 2em;
+    padding-left: 0.5em;
+}
+
+
+
+/*Seccion "Seguinos en nuestras redes sociales"*/
+#redesSocialesSeguinos {
+    display: none;
+    text-align: center;
+    font-size: smaller;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    background-image:linear-gradient(#585858,black) ;
+    color: white;
+    
+}
+.iconosRedes:hover{
+    border: white 2px solid;
+}
+.iconosRedes {
+    width:2em;
+    height:2em;
+}
+
+
+#redesSocialesSeguinos ul li {
+    border-right: none;
+    list-style: none;
+    padding-left: 8px;
+}
+
+#redesSocialesSeguinos ul {
+    display: block;
+}
+
+/*Staff*/
+
+.container {
+    display: grid;
+    padding-top: 0.5em;
+    grid-template-columns: 1fr .5fr .5fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap:10px;
+    justify-items: center;
+}
+
+.item {
+    height: 250px;
+    grid-column: 1/5;
+    background-image:linear-gradient(#585858,black);
+    /*padding: 2px;*/
+    text-align: center; /* No se pudo prescindir de esta propiedad usando align self*/
+
+}
+
+.item img {
+    width: 15%;
+}
+
+.item p {
+    color: white;
+}
+
+.encabezadoItem {
+    grid-column: 1/5;
+}
+
+.nati{
+    grid-row: 11/12;
+}
+
+
+/*Home*/
+
+#ContainerHome{
+    width:100%;
+    margin-top: 0.85em;
+}
+
+
+main img {
+width: 100%;
+}
+
+
+main video{
+    width: 100%;
+    height: 100%;
+}
+
+.itemHome{
+    width: 100%;
+    padding: 0.5em;
+}
+
+
+#flyerSomosUnaComunidad {
+    max-width: 100%;
+    height: 40%;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 1.5em;
+}
+
+#imgFlyerComoNosVemos{
+    width: 100%;
+    height: auto;
+}
+
+#flyerSintamosnosLibres{
+    margin:0 auto;
+    width: 75%;
+    padding-top: 20px;
+}
+
+#flyerSintamosnosLibres img {
+    width: 100%;
+}
+
+#videoPresentacionFrangi{
+    width: 60%;
+    height: 65%;
+    margin:0 auto;
+    background-image:linear-gradient(to bottom, #585858,white);
+}
+
+#videoPresentacionFrangi video{
+    width: 100%;
+}
+
+#vision {
+    padding: 8px;
+    margin-bottom: 0.75em;
+}
+
+
+
+/*scouting*/
+
+#convocatoria {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2em;
+    padding-top: 2em;
+    width: 14em;
+    height: 22em;
+}
+
+ol{
+    padding-left: 2em;
+    font-family:'Open Sans', sans-serif;
+    font-size: large;
+    letter-spacing: 1px;
+
+}
+
+/*contacto*/
+
+label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: large;
+    letter-spacing: 1px;
+}
+
+textarea {
+    width: 90vh;
+    height: 30vh;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#newsletter {
+    display: inline-flex;
+}
+
+#formSeccion1 {
+    display: inline-flex;
+}
+#formSeccion1 label {
+    padding-left: 1em ;
+    padding-right: 0.25em;
+
+}
+
+.botonesForm {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.botonesForm input{
+    width: 5.5em;
+    height: 2.5em;
+    border-radius: 5%;
+    background-color: #343A40;
+    color: white;
+    font-family:'Open Sans', sans-serif;
+    font-size: medium;
+}
+.botonesForm input:hover {
+    background-color: white;
+    color: black;
+}
+#botonEnviar {
+    margin-right: 1.5em;
+}
+
+/*pie de pagina*/
+#pieDePagina{
+    width: 100%;
+    height: 20em ;
+    color: white;
+    background-color:#585858;
+    font-family:'Open Sans', sans-serif;
+    font-size: 0.8em;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+footer div {
+    width: 100%;
+}
+
+#logoAlteraPieDePag{
+    width: 20%;
+}
+
+
+/*Medias Querys*/
+
+
+@media only screen and (min-width: 480px) {
+
+    body {
+        padding-top: 5em;
+    }
+
+    #ContainerHome{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 2fr 1fr;
+        grid-auto-rows: auto;
+        justify-content: center;
+        padding-bottom: 2em;
+    }    
+    
+    .slideHome {
+            grid-column: 1/3;
+        }
+        
+    #mision {
+            grid-column: 1/3;
+            text-align: center;
+        }
+        
+    #vision {
+            grid-column:1/2 ;
+            text-align: center;
+        }
+        
+    #videoPresentacionFrangi{
+    width: 230px;
+    height: 300px;
+    }
+        
+    #videoPresentacionFrangi video{
+     width: 100%;
+    }
+
+    #flyerSintamosnosLibres {
+        margin: 0;
+        width: 230px;
+        height: 300px;
+    }
+
+    #redesSocialesSeguinos {
+        display: block;
+    }
+        
+}
+
+@media only screen and (min-width: 768px) {
+#logoAlteraEncabezado {
+    width: 10em;
+}
+
+#menuIcon {
+    display: none;
+}
+
+header {
+    height: 7em;
+}
+
+.menuNav {
+    padding-left: 4em;
+     margin: 0;
+    background-color: white;
+     width: auto;
+    margin: 0;
+}
+        
+.menuNav ul {
+    flex-direction: row;
+    justify-content: center;
+        }
+        
+.menuNav ul li{
+    font-size: 1.10em;
+    letter-spacing: 2px;
+    border-right: black solid 1px;
+}
+        
+.menuNav ul li a {
+    color: black;
+}
+        
+.menuNav ul li a:hover {
+color: rgb(105, 105, 105);
+font-weight: 400;
+text-decoration: underline;
+}
+
+.titulo{
+    letter-spacing: 1.25px;
+    font-size: 2em;
+}
+
+main p {
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+/*Staff*/
+
+.container {
+    display: grid;
+    padding-top: 2em;
+    grid-template-columns: 1fr .5fr .5fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap:10px;
+}
+
+.elias {
+    grid-column:1/3 ;
+}
+.rachel {
+    grid-column: 3/5 ;
+}
+
+.frangi {
+    grid-column: 1/2;
+    grid-row:4/5 ;
+}
+
+.gabo {
+    grid-column: 2/4;
+    grid-row:4/5 ;
+}
+.jose {
+    grid-column:4/5 ;
+    grid-row: 4/5;
+}
+
+
+}
+
+
+
