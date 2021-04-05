@@ -14,6 +14,15 @@
     font-family: 'Open Sans', sans-serif;  
 }
 
+.titulo_Rosa {
+    color: rosybrown;
+    font-weight: bold;
+    font-size: 1.5em; 
+    font-family: 'Courgette', cursive;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
 .titulo {
     text-align: center;
     color: #343A40;
@@ -56,7 +65,7 @@ header{
 
 #logo {
     width: 15vh;
-    transform: skew(20deg,0deg);
+    transform: skew(25deg,0deg)
 }
 
 header label {
@@ -80,11 +89,12 @@ header label {
 .menuNav ul li:hover {
    background-color: white;
    transition-delay:0.1s ;
+
 }
 
-.menuNav ul li a:hover {
+.menuNav ul li:hover a {
     color: black;
-    transition-delay:0.1s ;
+    transition-delay:0.1s;
 }
 
 .menuNav ul li {
@@ -151,13 +161,15 @@ header label:hover {
 /*Main - contenido principal-*/
 
 main {
+    margin-top: 1em;
     padding-left: 0.5em;
     padding-right:0.5em ;
     margin-bottom: 5em ;
+    min-height: calc(100vh - 256px);
 }
 main p {
     font-family: 'Open Sans', sans-serif;
-    font-size: 0.75em;
+    font-size: 1em;
     letter-spacing: 0.5px;
 }
 
@@ -176,6 +188,7 @@ main section div {
 
 /*Seccion "Seguinos en nuestras redes sociales"*/
 #redesSocialesSeguinos {
+    margin-top: 2em;
     display: block;
     text-align: center;
     font-size: smaller;
@@ -311,9 +324,10 @@ main video{
 }
 
 #demo {
-    padding-top: 1.5em;
+    background-image:linear-gradient(#585858,black) ;
     margin-bottom: 2em;
     grid-column: 1/3;
+
 }
 
 .galeria {
@@ -323,8 +337,8 @@ main video{
 
 .carousel-item img {
     width: 100%;
-    max-height: 600px;
-    object-fit: cover;
+    height: 300px ;
+    object-fit:scale-down;
 }
 
 
@@ -343,53 +357,47 @@ main video{
 ol{
     padding-left: 2em;
     font-family:'Open Sans', sans-serif;
-    font-size: large;
+    font-size: 1em;
     letter-spacing: 1px;
 
 }
 
 /*contacto*/
 
+.formulario {
+    margin-left: 15%;
+    margin-right: 15% ;
+}
+
+
 label {
     font-family: 'Open Sans', sans-serif;
-    font-size: large;
+    font-size: 1em;
     letter-spacing: 1px;
 }
 
+#email {
+    padding-right: 15px;
+}
+
+#asunto {
+    padding-right: 9px;
+}
+
 textarea {
-    width: 90vh;
+    width: 80%;
     height: 30vh;
-}
-
-.formulario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-
-#newsletter {
-    display: inline-flex;
-}
-
-#formSeccion1 {
-    display: inline-flex;
-}
-#formSeccion1 label {
-    padding-left: 1em ;
-    padding-right: 0.25em;
-
 }
 
 .botonesForm {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
-
 
 .botonesForm input{
     width: 5.5em;
-    height: 2.5em;
+    height: 2em;
     border-radius: 5%;
     background-color: #343A40;
     color: white;
@@ -402,6 +410,11 @@ textarea {
 }
 #botonEnviar {
     margin-right: 1.5em;
+}
+
+#newsletter {
+    display: inline-flex;
+    justify-content: center;
 }
 
 /*pie de pagina*/
@@ -502,7 +515,8 @@ footer div {
     }
 }
 
-@media only screen and (min-width: 768px) {
+
+@media only screen and (min-width: 830px){
 #logoAlteraEncabezado {
     width: 10em;
 }
@@ -512,12 +526,11 @@ footer div {
 }
 
 header {
-    height: 7em;
+    height: 6.25em;
 }
 
 .menuNav {
-    margin-left: 4em;
-    margin: 0;
+    margin-right: 6px ;
     background-color: white;
     width: auto;
 }
@@ -528,9 +541,12 @@ header {
         }
         
 .menuNav ul li{
-    font-size: 1.25em;
-    letter-spacing: 2px;
-    border-right: black solid 1px;
+    font-size: 1.5em;
+    letter-spacing: 1.5px;
+}
+
+.menuNav ul li:hover {
+    transform: scale(1.1,1.1);
 }
         
 .menuNav ul li a {
@@ -542,6 +558,25 @@ color: rgb(105, 105, 105);
 font-weight: 400;
 text-decoration: underline;
 }
+
+#flyerSintamosnosLibres {
+    width: 100%;
+    height: 100%;
+}
+
+#imgLibres {
+    width: 100%;
+}
+
+#videoPresentacionFrangi {
+    width: 80%;
+    max-height: 400px;
+}
+
+
+}
+
+@media only screen and (min-width: 768px) {
 
 .titulo{
     letter-spacing: 1.25px;
@@ -583,7 +618,6 @@ main p {
     grid-column:4/5 ;
     grid-row: 4/5;
 }
-
 
 }
 
