@@ -1,2 +1,2 @@
 # Altera-Web-Site
-Este es el desarrollo web del sitio oficial de la comunidad de modelos, Alterá.
+Este es el desarrollo del sitio web oficial de Alterá, una comunidad de modelos que propone un sentido de corporeidad diferente.
