@@ -33,33 +33,23 @@
             <main id="mainContacto">
                 <section>
                     <h1 class= "titulo">Contactanos</h1>
-                    <form  class="formulario" action="">
+                    <form  class="formulario" action="formulario.php" method="post">
 
                         <div id="formSeccion1">
                             <label for="nombre">Nombre</label>
-                            <input type="text" name="nombre"><br>
+                            <input type="text" name="nombre" autofocus required><br>
                             <label id="email" for="email">E-mail</label>
-                            <input type="email" name="email" ><br>
+                            <input type="email" name="email" required><br>
                             <label id="asunto" for="asunto">Asunto</label>
-                            <input list="asunto">
-                            <datalist id="asunto">
-                            <option value="Inscripcion"></option>
-                            <option value="Desfiles"></option>
-                            <option value="RRHH"></option>
-                            </datalist>
+                            <input type="text" name="asunto" required>
                         </div>
 
                         <div>
-                            <textarea id="mensaje"name="mensaje" id="" cols="450" rows="10" ></textarea>   
-                        </div>
-
-                        <div id="newsletter">
-                            <p> ¿Desea recibir el newsletter?</p>
-                            <input type="checkbox" name="acepta" value="1">
+                            <textarea id="mensaje"name="mensaje" cols="450" rows="10" required></textarea>   
                         </div>
     
                         <div class="botonesForm">
-                        <input id="botonEnviar" type="button" value="Enviar">
+                        <input id="botonEnviar" type="submit" value="Enviar">
                         <input id="botonBorrar" type="reset" value="Borrar todo">
                         </div>
                         </section>
