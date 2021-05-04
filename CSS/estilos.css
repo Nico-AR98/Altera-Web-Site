@@ -466,6 +466,10 @@ textarea {
 }
 /*PANTALLAS A PARTIR DE 992px*/
 @media only screen and (min-width: 992px) {
+  body {
+    padding-top: 7em;
+  }
+
   /*Home*/
   #ContainerHome {
     display: grid;
