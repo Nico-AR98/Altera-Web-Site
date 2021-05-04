@@ -4,6 +4,17 @@
     padding: 0px;
 }
 
+body ul li{
+    list-style: none;
+}
+
+body {
+    width: 100%;
+    padding-top: 27%;
+    background-image: url(img/Photos/cemento_blanco.jpg);
+    background-size:contain ;
+}
+
 
 /*clases tipografia*/
 
@@ -24,140 +35,41 @@
 }
 
 .titulo {
-    text-align: center;
+    text-align: left;
     color: #343A40;
     font-weight: bold;
     font-size: 1.5em;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
+    border-bottom: 1.5px solid black;
 }
 .negrita {
     font-weight: bold;
-}
-
-body {
-    width: 100%;
-    padding-top: 20%;
-    background-image: url(img/Photos/cemento_blanco.jpg);
-    background-size:contain ;
 }
 
 /* Header*/
 
 header{
     width: 100%;
-    height: 5em;
-    opacity: 1;
     position:fixed;
-    display:flex;
     z-index:10;
-    align-items: center;
-    background-color: white;
-    border-bottom: solid black 1px;
     top: 0px;
     left: 0px;
 }
 
-#logoAlteraEncabezado {
-    width: 100%;
-}
-
-#logo {
-    width: 15vh;
-    transform: skew(25deg,0deg)
-}
-
-header label {
-    display: block;
-    width: 8vh;
-    height: 8vh;
-    padding:10px;
+#logoNavbar {
+    width: 20vh;
 }
 
 .menuNav {
-    position: absolute;
-    right: 0;
-
-    z-index:10;
-
-    background-color:black;
-    width: 30%;
-    margin-right: -31%;
-}
-
-.menuNav ul li:hover {
-   background-color: white;
-   transition-delay:0.1s ;
-
-}
-
-.menuNav ul li:hover a {
-    color: black;
-    transition-delay:0.1s;
-}
-
-.menuNav ul li {
-    width: 100%;
-    text-align:left;
-    padding:0;
-    border-right:0px;
-    font-size: 1.10em;
-    letter-spacing: 1px;
-}
-
-header label {
-    position: absolute;
-    right: 0;
-}
-
-.menuNav ul {
-    display:flex;
-    flex-direction: column;
-    padding-inline-start: 0;
-}
-
-
-
-.menuNav ul li a {
-    font-size: 0.85em;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     text-transform: uppercase;
-    padding: 5px;
-    text-decoration: none;
-    color: white;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    font-size: 1.15em;
+    min-height: 17vh;
 }
-
-ul li{
-    list-style: none;
-}
-
-#menuIcon {
-    width: 100%;
-}
-
-#botonMenu {
-    display: none;
-}
-
-header label {
-    display: block;
-    width: 60px;
-    height: 60px;
-    padding:10px;
-}
-
-header label:hover {
-    cursor: pointer;
-}
-
-
-#botonMenu:checked ~ .menuNav {
-    margin-top: 15em;
-    margin-right: 0;
-}
-
-
 /*Main - contenido principal-*/
 
 main {
@@ -171,6 +83,13 @@ main p {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
     letter-spacing: 0.5px;
+}
+
+main ul {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+    letter-spacing: 0.8px;
+    padding: 0px;
 }
 
 main h1, h2 {
@@ -311,7 +230,7 @@ main video{
     width: 60%;
     height: 65%;
     margin:0 auto;
-    background-image:linear-gradient(to bottom, #585858,white);
+    background-color: black;
 }
 
 #videoPresentacionFrangi video{
@@ -343,9 +262,12 @@ main video{
 
 #grillaMarcas {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-auto-rows: 1fr;
-    grid-gap: 10px;
+    grid-gap: 5px;
+    justify-content: space-around;
+    justify-items: center;
+    margin: 0 auto;
 }
 
 .iconoMarca {
@@ -438,12 +360,17 @@ textarea {
     text-align: center;
     width: 100%;
     height: 38em ;
-    background-color:#585858;
+    background-image: linear-gradient(#585858,black);
     font-family:'Open Sans', sans-serif;
     font-size: 0.9em;
     letter-spacing: 1px;
     color: white;
     letter-spacing: 1px;
+}
+
+#logoAlteraPieDePag {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 #copyright{
@@ -490,29 +417,30 @@ textarea {
     #ContainerHome{
         display: grid;
         width: 100%;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-auto-rows: auto;
         justify-content: center;
         padding-bottom: 2em;
     }    
     
     .slideHome {
-            grid-column: 1/3;
-        }
+            grid-column: 1/4;
+    }
         
-    #mision {
-            grid-column: 1/3;
-            text-align: center;
-        }
         
     #vision {
-            grid-column:1/2 ;
-            text-align: center;
-        }
+        grid-column:2/4 ;
+        text-align: left;
+    }
+
+    #nosotros {
+        grid-column: 1/3;
+    }
         
     #videoPresentacionFrangi{
     width: 230px;
     height: 300px;
+    grid-row: 4/5;
     }
         
     #videoPresentacionFrangi video{
@@ -560,47 +488,6 @@ textarea {
 
 
 @media only screen and (min-width: 830px){
-#logoAlteraEncabezado {
-    width: 10em;
-}
-
-#menuIcon {
-    display: none;
-}
-
-header {
-    height: 6.25em;
-}
-
-.menuNav {
-    margin-right: 6px ;
-    background-color: white;
-    width: auto;
-}
-        
-.menuNav ul {
-    flex-direction: row;
-    justify-content: center;
-        }
-        
-.menuNav ul li{
-    font-size: 1.5em;
-    letter-spacing: 1.5px;
-}
-
-.menuNav ul li:hover {
-    transform: scale(1.1,1.1);
-}
-        
-.menuNav ul li a {
-    color: black;
-}
-        
-.menuNav ul li a:hover {
-color: rgb(105, 105, 105);
-font-weight: 400;
-text-decoration: underline;
-}
 
 #flyerSintamosnosLibres {
     width: 100%;
@@ -651,8 +538,13 @@ text-decoration: underline;
 }
 
 main p {
-    font-size: 1em;
+    font-size: 1.08em;
     letter-spacing: 1px;
+}
+
+/*Home*/
+#Marcas {
+    grid-column:1/4 ;
 }
 
 /*Staff*/
