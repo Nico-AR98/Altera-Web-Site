@@ -1,0 +1,366 @@
+@charset "UTF-8";
+/*clases tipografia*/
+.epigrafe {
+  padding-top: 5px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: smaller;
+  color: white;
+}
+
+.titulo_Rosa {
+  color: rosybrown;
+  font-weight: bold;
+  font-size: 1.5em;
+  font-family: "Courgette", cursive;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.titulo {
+  text-align: left;
+  color: #343A40;
+  font-weight: bold;
+  font-size: 1.5em;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 1.5px solid black;
+}
+
+.negrita {
+  font-weight: bold;
+}
+
+/*Estilos generales*/
+/*Se encuentran aquellos atributos que se aplican a todas las páginas*/
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  width: 100%;
+  padding-top: 27%;
+  background-image: linear-gradient(#F8F9FA, #DEE2E6);
+}
+body ul li {
+  list-style: none;
+}
+
+ol {
+  padding-left: 2em;
+  font-size: 1em;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 1px;
+}
+
+/*Main - contenido principal-*/
+main {
+  min-height: calc(100vh - 256px);
+  margin-top: 1em;
+  margin-bottom: 5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+main p {
+  letter-spacing: 0.5px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+}
+main ul {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.1em;
+  letter-spacing: 0.8px;
+  padding: 0px;
+}
+main h1, main h2 {
+  padding-bottom: 3px;
+  padding-top: 5px;
+}
+main section div {
+  padding-top: 2em;
+  padding-left: 0.5em;
+}
+main video {
+  width: 100%;
+  height: 100%;
+}
+main img {
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 0px;
+  left: 0px;
+}
+
+#logoNavbar {
+  width: 20vh;
+}
+
+.menuNav {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.15em;
+  min-height: 17vh;
+}
+
+/*Seccion "Seguinos en nuestras redes sociales"*/
+#redesSocialesSeguinos {
+  margin-top: 2em;
+  display: block;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: smaller;
+  letter-spacing: 1px;
+  background-image: linear-gradient(#585858, black);
+  color: white;
+}
+#redesSocialesSeguinos ul {
+  display: inline-flex;
+}
+#redesSocialesSeguinos ul li {
+  border-right: none;
+  list-style: none;
+  padding-left: 8px;
+}
+
+#textDesk {
+  display: none;
+}
+
+.iconosRedes {
+  width: 2em;
+  height: 2em;
+}
+.iconosRedes:hover {
+  border: white 2px solid;
+}
+
+/*Estilos del pie de página*/
+/*Mobile <576px */
+#pieDePagina {
+  display: grid;
+  grid-template-columns: 0.4fr 0.6fr;
+  grid-template-rows: 0.3fr 0.3fr;
+  justify-items: center;
+  text-align: center;
+  width: 100%;
+  height: 38em;
+  background-image: linear-gradient(#585858, black);
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  color: white;
+  letter-spacing: 1px;
+}
+
+#logoAlteraPieDePag {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#copyright {
+  grid-column: 1/3;
+  padding-top: 1.5em;
+}
+
+#vinculosFooter {
+  grid-column: 1/3;
+}
+#vinculosFooter li :hover {
+  text-decoration: underline;
+}
+#vinculosFooter li a {
+  text-decoration: none;
+  display: block;
+  letter-spacing: 1px;
+  color: white;
+}
+
+#logoAlteraPieDePag {
+  width: 7em;
+  grid-column: 1/3;
+}
+
+#mapaGoogle {
+  width: 95%;
+  height: 80%;
+  grid-column: 1/3;
+}
+
+/*contacto*/
+.formulario {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+label {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+
+#email {
+  padding-right: 15px;
+}
+
+#asunto {
+  padding-right: 9px;
+}
+
+textarea {
+  width: 80%;
+  height: 30vh;
+}
+
+.botonesForm {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.botonesForm input {
+  width: 5.5em;
+  height: 2em;
+  border-radius: 5%;
+  background-color: #343A40;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: medium;
+}
+.botonesForm input:hover {
+  background-color: white;
+  color: black;
+}
+
+#botonEnviar {
+  margin-right: 1.5em;
+}
+
+#newsletter {
+  display: inline-flex;
+  justify-content: center;
+}
+
+/*Staff*/
+.container {
+  display: grid;
+  padding-top: 0.5em;
+  grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 10px;
+  justify-items: center;
+}
+
+.item {
+  height: 250px;
+  grid-column: 1/5;
+  background-image: linear-gradient(#585858, black);
+  text-align: center;
+}
+
+.item img {
+  width: 15%;
+}
+
+.item p {
+  color: white;
+}
+
+.encabezadoItem {
+  grid-column: 1/5;
+}
+
+.nati {
+  grid-row: 11/12;
+}
+
+/*Home*/
+#ContainerHome {
+  width: 100%;
+  margin-top: 0.85em;
+}
+
+.itemHome {
+  width: 100%;
+  padding: 0.5em;
+}
+
+#flyerSomosUnaComunidad {
+  max-width: 100%;
+  height: 40%;
+  margin: 0 auto;
+  padding-bottom: 1.5em;
+}
+
+#imgFlyerComoNosVemos {
+  width: 100%;
+  height: auto;
+}
+
+#flyerSintamosnosLibres {
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 20px;
+}
+
+#flyerSintamosnosLibres img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#videoPresentacionFrangi {
+  width: 60%;
+  height: 65%;
+  margin: 0 auto;
+  background-color: black;
+}
+
+#videoPresentacionFrangi video {
+  width: 100%;
+}
+
+#vision {
+  padding: 8px;
+  margin-bottom: 0.75em;
+}
+
+#demo {
+  background-image: linear-gradient(#585858, black);
+  margin-bottom: 2em;
+  grid-column: 1/3;
+}
+
+.galeria {
+  padding-top: 3em;
+  grid-column: 1/3;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+}
+
+#grillaMarcas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 1fr;
+  grid-gap: 2px;
+  justify-content: space-between;
+  justify-items: center;
+  margin: 0 auto;
+}
+
+.iconoMarca {
+  width: 100%;
+  height: auto;
+}

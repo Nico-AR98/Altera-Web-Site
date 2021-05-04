@@ -1,0 +1,44 @@
+/*clases tipografia*/
+
+.epigrafe{
+    padding-top: 5px;
+    text-align: center;
+
+    font: {
+        family: 'Open Sans', sans-serif;
+        size: smaller;
+    }
+
+    color: white;
+}
+
+.titulo_Rosa {
+    color: rosybrown;
+
+    font: {
+        weight: bold;
+        size: 1.5em; 
+        family: 'Courgette', cursive;
+    }
+
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.titulo {
+    text-align: left;
+    color: #343A40;
+
+    font: {
+     weight: bold;
+     size: 1.5em;
+     family:'Roboto', sans-serif;
+    }
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1.5px solid black;
+}
+.negrita {
+    font-weight: bold;
+}
