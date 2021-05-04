@@ -1,0 +1,92 @@
+/*Home*/
+
+#ContainerHome{
+    width:100%;
+    margin-top: 0.85em;
+}
+
+
+
+.itemHome{
+    width: 100%;
+    padding: 0.5em;
+}
+
+
+#flyerSomosUnaComunidad {
+    max-width: 100%;
+    height: 40%;
+    margin: 0 auto;
+    padding-bottom: 1.5em;
+}
+
+#imgFlyerComoNosVemos{
+    width: 100%;
+    height: auto;
+}
+
+#flyerSintamosnosLibres{
+    margin:0 auto;
+    width: 100%;
+    padding-top: 20px;
+}
+
+#flyerSintamosnosLibres img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#videoPresentacionFrangi{
+    width: 60%;
+    height: 65%;
+    margin:0 auto;
+    background-color: black;
+}
+
+#videoPresentacionFrangi video{
+    width: 100%;
+}
+
+#vision {
+    padding: 8px;
+    margin-bottom: 0.75em;
+}
+
+#demo {
+    background-image:linear-gradient(#585858,black) ;
+    margin-bottom: 2em;
+    grid-column: 1/3;
+
+}
+
+.galeria {
+    padding-top: 3em;
+    grid-column: 1/3;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 300px ;
+    object-fit: contain;
+}
+
+#Marcas {
+    padding-top: 1em;
+}
+
+#grillaMarcas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    grid-gap: 2px;
+    justify-content:space-between;
+    justify-items: center;
+    margin: 0 auto;
+
+}
+
+.iconoMarca {
+    width: 100%;
+    height: auto;
+}

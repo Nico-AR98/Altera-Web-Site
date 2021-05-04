@@ -1,0 +1,42 @@
+/*Seccion "Seguinos en nuestras redes sociales"*/
+#redesSocialesSeguinos {
+    margin-top: 2em;
+    display: block;
+    text-align: center;
+
+    font: {
+        family: 'Open Sans', sans-serif;
+        size: smaller;
+    }
+
+    letter-spacing: 1px;
+    background-image:linear-gradient(#585858,black) ;
+    color: white;
+
+    ul {
+
+        li {
+            border-right: none;
+            list-style: none;
+            padding-left: 8px;
+        };
+
+        display: inline-flex;
+    }
+    
+}
+
+#textDesk{
+    display: none;
+}
+
+
+.iconosRedes {
+    width:2em;
+    height:2em;
+
+    &:hover{
+        border: white 2px solid;
+    }
+}
+

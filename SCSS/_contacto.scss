@@ -1,0 +1,60 @@
+/*contacto*/
+
+.formulario {
+
+    margin: {
+        left:15%;
+        right:15%;
+    };
+}
+
+
+label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+#email {
+    padding-right: 15px;
+}
+
+#asunto {
+    padding-right: 9px;
+}
+
+textarea {
+    width: 80%;
+    height: 30vh;
+}
+
+.botonesForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    input{
+        width: 5.5em;
+        height: 2em;
+        border-radius: 5%;
+        background-color: #343A40;
+        color: white;
+        font-family:'Open Sans', sans-serif;
+        font-size: medium;
+
+        &:hover {
+            background-color: white;
+            color: black;
+        }
+    }
+
+}
+
+#botonEnviar {
+    margin-right: 1.5em;
+}
+
+#newsletter {
+    display: inline-flex;
+    justify-content: center;
+}

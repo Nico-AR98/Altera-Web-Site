@@ -13,6 +13,7 @@
 body {
     width: 100%;
     padding-top: 27%;
+
     background-image: linear-gradient(#F8F9FA,#DEE2E6,);
 
     ul li{
@@ -53,7 +54,7 @@ main {
         letter-spacing: 0.5px;
         font: {
             family:'Open Sans', sans-serif;
-            size: 1em;
+            size: 1.1em;
         };
     }
 
@@ -101,4 +102,5 @@ main {
 @import "contacto";
 @import "staff";
 @import "home";
+@import "mediaquery";
 

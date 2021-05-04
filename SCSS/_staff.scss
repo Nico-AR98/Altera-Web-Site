@@ -1,0 +1,38 @@
+/*Staff*/
+
+.container {
+    display: grid;
+    padding-top: 0.5em;
+
+    grid-template: { 
+        columns: 1fr .5fr .5fr 1fr;
+        rows: 1fr;
+    };
+
+    grid-gap:10px;
+    justify-items: center;
+}
+
+.item {
+    height: 250px;
+    grid-column: 1/5;
+    background-image:linear-gradient(#585858,black);
+    text-align: center; 
+
+}
+
+.item img {
+    width: 15%;
+}
+
+.item p {
+    color: white;
+}
+
+.encabezadoItem {
+    grid-column: 1/5;
+}
+
+.nati{
+    grid-row: 11/12;
+}
