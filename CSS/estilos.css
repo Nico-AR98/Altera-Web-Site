@@ -260,33 +260,21 @@ textarea {
 .container {
   display: grid;
   padding-top: 0.5em;
-  grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   grid-gap: 10px;
   justify-items: center;
 }
 
-.item {
-  height: 250px;
-  grid-column: 1/5;
-  background-image: linear-gradient(#585858, black);
+.card img {
+  width: 100%;
+  height: 280px;
+}
+
+.card-body {
   text-align: center;
-}
-
-.item img {
-  width: 15%;
-}
-
-.item p {
   color: white;
-}
-
-.encabezadoItem {
-  grid-column: 1/5;
-}
-
-.nati {
-  grid-row: 11/12;
+  background-color: #8a817c;
 }
 
 /*Home*/
@@ -377,7 +365,7 @@ textarea {
 }
 
 /*Medias query*/
-/* Pantallas a partir de 465px*/
+/* a partir de 465px*/
 @media only screen and (min-width: 465px) {
   /*Tipografia*/
   .epigrafe {
@@ -421,7 +409,7 @@ textarea {
     font-size: 1em;
   }
 }
-/*PANTALLAS A PARTIR DE 576px*/
+/*A PARTIR DE 576px*/
 @media only screen and (min-width: 576px) {
   /*Home*/
   #videoPresentacionFrangi {
@@ -434,7 +422,7 @@ textarea {
     height: 400px;
   }
 }
-/*PANTALLAS A PARTIR DE 768px*/
+/*A PARTIR DE 768px*/
 @media only screen and (min-width: 768px) {
   .titulo {
     letter-spacing: 1.25px;
@@ -462,6 +450,13 @@ textarea {
 
   #copyright {
     grid-column: 2/3;
+  }
+
+  /*Staff*/
+  .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 8px;
   }
 }
 /*PANTALLAS A PARTIR DE 992px*/
@@ -524,5 +519,10 @@ textarea {
   .carousel-item {
     width: -webkit-max-content;
     width: max-content;
+  }
+
+  /*Staff*/
+  .container {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }

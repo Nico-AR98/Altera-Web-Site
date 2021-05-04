@@ -1,6 +1,6 @@
 /*Medias query*/
 
-/* Pantallas a partir de 465px*/
+/* a partir de 465px*/
 
 @media only screen and (min-width: 465px) {
 
@@ -51,7 +51,7 @@
     }
 }
 
-/*PANTALLAS A PARTIR DE 576px*/
+/*A PARTIR DE 576px*/
 @media only screen and (min-width: 576px) {
     /*Home*/
 
@@ -68,7 +68,7 @@
 
 }
 
-/*PANTALLAS A PARTIR DE 768px*/
+/*A PARTIR DE 768px*/
 
 @media only screen and (min-width: 768px) {
 
@@ -100,6 +100,17 @@
     
         #copyright {
             grid-column: 2/3;
+        }
+
+        /*Staff*/
+        .container {
+        
+            grid-template: { 
+                columns: 1fr 1fr;
+                rows: 1fr;
+            };
+        
+            grid-gap:8px;
         }
 }
 
@@ -167,6 +178,13 @@
 
     .carousel-item {
         width: max-content;
+    }
+
+    /*Staff*/
+    .container {
+        grid-template: { 
+            columns: 1fr 1fr 1fr;
+        };
     }
 }
 
