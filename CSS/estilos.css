@@ -58,7 +58,7 @@ body ul li {
 
 ol {
   padding-left: 2em;
-  font-size: 1em;
+  font-size: 1.1em;
   font-family: "Open Sans", sans-serif;
   letter-spacing: 1px;
 }
@@ -216,7 +216,7 @@ label {
 }
 
 #email {
-  padding-right: 15px;
+  padding-right: 16px;
 }
 
 #asunto {
@@ -224,7 +224,7 @@ label {
 }
 
 textarea {
-  width: 80%;
+  width: 100%;
   height: 30vh;
 }
 
@@ -372,11 +372,16 @@ textarea {
     color: black;
   }
 
-  /*Home*/
+  /*Estilos generales*/
   body {
-    padding-top: 5.7em;
+    padding-top: 5em;
   }
 
+  main {
+    margin-top: 0.4em;
+  }
+
+  /*Home*/
   #videoPresentacionFrangi {
     width: 100%;
     height: 320px;
@@ -408,6 +413,11 @@ textarea {
     display: block;
     font-size: 1em;
   }
+
+  /*Scouting*/
+  #containerFlexScout {
+    display: flex;
+  }
 }
 /*A PARTIR DE 576px*/
 @media only screen and (min-width: 576px) {
@@ -426,7 +436,7 @@ textarea {
 @media only screen and (min-width: 768px) {
   .titulo {
     letter-spacing: 1.25px;
-    font-size: 2em;
+    font-size: 2.2em;
   }
 
   /*Footer*/
@@ -457,6 +467,12 @@ textarea {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-gap: 8px;
+  }
+
+  /*Contacto*/
+  .formulario {
+    margin-left: 8%;
+    margin-right: 8%;
   }
 }
 /*PANTALLAS A PARTIR DE 992px*/
@@ -524,5 +540,10 @@ textarea {
   /*Staff*/
   .container {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  /*Contacto*/
+  textarea {
+    width: 70%;
   }
 }

@@ -62,20 +62,26 @@
         </header>
             <main id="mainContacto">
                 <section>
-                    <h1 class= "titulo">Contactanos</h1>
+                    <h1 class= "titulo alinearCentro">Contactanos</h1>
                     <form  class="formulario" action="formulario.php" method="post">
 
                         <div id="formSeccion1">
+                          <div>
                             <label for="nombre">Nombre</label>
-                            <input type="text" name="nombre" autofocus required><br>
+                            <input type="text" name="nombre" autofocus required>
+                          </div>
+                          <div>
                             <label id="email" for="email">E-mail</label>
-                            <input type="email" name="email" required><br>
+                            <input type="email" name="email" required>
+                          </div>
+                          <div>
                             <label id="asunto" for="asunto">Asunto</label>
                             <input type="text" name="asunto" required>
+                          </div>
                         </div>
 
                         <div>
-                            <textarea id="mensaje"name="mensaje" cols="450" rows="10" required></textarea>   
+                          <textarea id="mensaje"name="mensaje" cols="450" rows="10" required></textarea>   
                         </div>
     
                         <div class="botonesForm">

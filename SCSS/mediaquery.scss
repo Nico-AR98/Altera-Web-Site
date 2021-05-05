@@ -9,11 +9,16 @@
         color:black;
     }
 
-    /*Home*/
-
+    /*Estilos generales*/
     body {
-        padding-top: 5.7em;
+        padding-top: 5em;
     }
+
+    main {
+        margin-top: 0.4em;
+    }
+
+    /*Home*/
 
     #videoPresentacionFrangi {
         width:100%;
@@ -49,6 +54,12 @@
         display: block;
         font-size: 1em;
     }
+
+    /*Scouting*/
+
+    #containerFlexScout {
+        display: flex;
+    }
 }
 
 /*A PARTIR DE 576px*/
@@ -74,46 +85,56 @@
 
     .titulo{
         letter-spacing: 1.25px;
-        font-size: 2em;
+        font-size: 2.2em;
     }
     
-        /*Footer*/
+    /*Footer*/
 
-        #pieDePagina {
-            height: 300px;
-        }
+    #pieDePagina {
+        height: 300px;
+    }
     
-        #mapaGoogle{
-            grid-column: 1/2;
-            grid-row: 1/3;
-            padding-top: 2em;
-        }
+    #mapaGoogle{
+         grid-column: 1/2;
+         grid-row: 1/3;
+         padding-top: 2em;
+    }
     
-        #logoAlteraPieDePag {
-            grid-column: 2/3;
-        }
+    #logoAlteraPieDePag {
+        grid-column: 2/3;
+    }
     
     
-        #vinculosFooter {
-            grid-column: 2/3;
-        }
+    #vinculosFooter {
+        grid-column: 2/3;
+    }
     
-        #copyright {
-            grid-column: 2/3;
-        }
+    #copyright {
+        grid-column: 2/3;
+    }
 
-        /*Staff*/
-        .container {
+    /*Staff*/
+    .container {
         
-            grid-template: { 
-                columns: 1fr 1fr;
-                rows: 1fr;
-            };
+    grid-template: { 
+        columns: 1fr 1fr;
+         rows: 1fr;
+    };
+    
+        grid-gap:8px;
+    }
         
-            grid-gap:8px;
-        }
+    /*Contacto*/
+
+    .formulario {
+
+        margin: {
+            left:8%;
+            right:8%;
+        };
+    }
+
 }
-
 
 /*PANTALLAS A PARTIR DE 992px*/
 
@@ -185,6 +206,11 @@
         grid-template: { 
             columns: 1fr 1fr 1fr;
         };
+    }
+
+    /*Contacto*/
+    textarea {
+        width: 70%;
     }
 }
 
